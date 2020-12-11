@@ -1,1 +1,52 @@
 /* Add CSS styling here */
+
+.tabs nav {
+display: flex;
+    justify-content: center;
+    background-color: green;
+    border-style: solid;
+    border-color: red;
+
+}
+
+.tabs h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.tabs nav a {
+    border-style: dotted;
+    border-color: white;
+}
+
+main img {
+    height: 400px;
+    width: 1800px;
+}
+
+.para1 p {
+    display: flex;
+    justify-content: center;
+    background-color: purple;
+    width: 900px;
+    height: 90px;
+    margin-left: 400px;
+    font-family: Verdana;
+    margin-right: 400px;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    background-color: red;
+    margin-left: 20px;
+    border-style: solid;
+    border-color: green;
+}
+
+#gallery {
+    display: flex;
+    margin: 10%;
+    padding: 20px;
+}
