@@ -1,12 +1,13 @@
 /* Add CSS styling here */
 
 .tabs nav {
-display: flex;
-    justify-content: center;
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    background-color: darkblue;
     border-style: solid;
-    border-color: red;
-
+    border-color: rgb(255, 0, 0);
+    width: 30%;
+    margin-left: 38%;
 }
 
 .tabs h1 {
@@ -15,8 +16,12 @@ display: flex;
 }
 
 .tabs nav a {
-    border-style: dotted;
-    border-color: white;
+    border-style: solid;
+    border-color: black;
+    color: white; 
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
 }
 
 main img {
@@ -27,12 +32,14 @@ main img {
 .para1 p {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: purple;
     width: 900px;
     height: 90px;
-    margin-left: 400px;
+    margin-left: 20%;
     font-family: Verdana;
-    margin-right: 400px;
+    margin-right: 20%;
+    flex-wrap: wrap;
 }
 
 #footer{
@@ -49,4 +56,142 @@ main img {
     display: flex;
     margin: 10%;
     padding: 20px;
+}
+
+#gallery p {
+    margin: 5%;
+    font-size: 120%;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+
+}
+
+@media (max-width: 800px) {
+    .tabs nav {
+        display: -webkit-flex;
+       display: flex;
+       flex-direction: column;   
+          }
+
+  
+   .tabs nav a {
+        margin: 20px 0px 0px 0px;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 1%;
+        }
+
+    .para1 p {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: auto;
+        margin: auto;
+        font-size: 20px;
+        border: 5px groove red;
+        margin-left: 0;
+        padding: 5%;
+        width: 90%;
+    }
+
+    main .imgfile img {
+        height: 50%;
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+    #gallery {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }    
+
+    #gallery span {
+        display: flex;
+        justify-content: center;
+        padding: 5%;
+    }
+
+    #gallery p {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    #footer button {
+        width: 20%;
+
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .tabs nav {
+         display: -webkit-flex;
+        display: flex;
+        flex-direction: column;   
+           }
+
+   
+    .tabs nav a {
+         margin: 20px 0px 0px 0px;
+         padding-left: 4%;
+         padding-right: 4%;
+         padding-top: 1%;
+         }
+     
+         .para1 p {
+     
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-basis: auto;
+             margin: auto;
+             font-size: 18px;
+             border: 5px groove green;
+             margin-left: 0;
+             padding: 5%;
+             width: 90%;
+         }
+     
+         main .imgfile img {
+             height: 50%;
+             width: 50%;
+             display: block;
+             margin-left: auto;
+             margin-right: auto;
+             }
+     
+         #gallery {
+             display: flex;
+             flex-wrap: wrap;
+             /*flex-direction: column;*/
+            justify-content: space-between;
+            margin: auto;
+         }    
+     
+         #gallery span {
+             display: flex;
+             justify-content: center;
+             padding: 5%;
+         }
+     
+         #gallery p {
+             display: flex;
+             justify-content: center;
+             font-size: 25px;
+         }
+     
+         #footer button {
+             width: 20%;
+     
+         }
+
 }
